@@ -80,7 +80,7 @@ header {
 .piece_of_list {
     position: relative;
 }
-.vertical_box li {
+.vertical_box ul li {
     float: none;
     padding: 1px;
 }
@@ -250,4 +250,206 @@ container {
 	height: 6px;
 	width: 170px;
 	display: block;
+}
+
+chest {
+	width: 100%;
+
+	position: relative;
+	background-color: #F1F1F1;
+}
+
+.chest_header {
+	font-weight: bold;
+	position: absolute;
+	top: 30px;
+	left: 65px;
+	display: block;
+	font-size: 22px;
+	z-index: 2;
+}
+
+.chest_header::after {
+	content:"";
+	background-color: #24BA9F;
+	width: 350px;
+	height: 6px;
+	display: block;
+}
+
+.chest_box {
+	    height: 500px;
+	    width: 400px;
+	    position: relative;
+	    text-align: center;
+	    display: inline-block;
+	    margin-left: 10px;
+		margin-bottom: 100px;
+}
+
+#rest_box {
+	background-color: white;
+	left: 50px;
+	top:60px;
+	border: 3px solid lightgray;
+
+}
+
+#add_box {
+	background-color: #24BA9F;
+	left: 60px;
+	top: 60px;
+	border: 3px solid #24BA9F;
+
+}
+
+#option_box {
+	background-color: white;
+	left: 70px;
+	top: 60px;
+	border: 3px solid lightgray;
+
+}
+.chest_boxes {
+	display: flex;
+	align-items: center;
+	background-color: #F1F1F1;
+	z-index: 1;
+	height: 700px;
+}
+
+.box_info {
+	position: relative;
+}
+
+.box_icon {
+	width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    left: 175px;
+    bottom: 485px;
+}
+
+#box_art {
+	background-color: lightgray;
+	border: 12px solid white;
+	box-shadow: 0px 0px 0px 3px lightgray;
+}
+
+#box_symbol {
+	background-color: white;
+	border: 12px solid #24BA9F;
+	box-shadow: 0px 0px 0px 3px #24BA9F;
+}
+
+#box_logo {
+	background-color: lightgray;
+	border: 12px solid white;
+	box-shadow: 0px 0px 0px 3px lightgray;
+}
+
+.info_plan {
+	font-size: 22px;
+	font-weight: bold;
+	padding: 50px;
+}
+
+#plan_many {
+	color: #24BA9F;
+}
+#plan_more {
+	color: white;
+}
+
+#plan_the_most {
+	color: #24BA9F;
+}
+
+.info_price {
+	width: 170px;
+	height: 170px;
+	border-radius: 100%;
+	background-color: white;
+	border: 1px solid lightgray;
+	position: absolute;
+	left: 115px;
+	top: 90px;
+	font-weight: bold;
+}
+
+.price_height {
+	font-size: 60px;
+	margin-top: 40px;
+}
+.price_time {
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+#price_color {
+	color: #24BA9F;
+}
+
+#price_light {
+	color: lightgray;
+}
+
+.price_upper {
+	font-size: 15px;
+	position: absolute;
+
+}
+
+.info_paint {
+	color: gray;
+	background-color: #E4E4E4;
+	padding: 13px;
+}
+
+.info_express {
+	color: black;
+	background-color: #F1F1F1;
+	padding: 13px;
+}
+
+.info_describe {
+	color: gray;
+	background-color: #F1F1F1;
+	padding: 13px;
+}
+
+.info_show {
+	color: gray;
+	background-color: white;
+	padding: 13px;
+}
+
+.box_margin {
+	margin-top: 150px;
+}
+
+.box_join {
+	font-size: 20px;
+	background-color: #24BA9F;
+	color: white;
+	width: 160px;
+	border-radius: 4px;
+	padding: 5px;
+	margin-left: 112px;
+	position: absolute;
+	bottom: 20px;
+}
+
+.box_observe {
+	font-size: 20px;
+	background-color: white;
+	color: #24BA9F;
+	width: 160px;
+	height: 20px;
+	border-radius: 4px;
+	padding: 5px;
+	margin-left: 112px;
+	position: absolute;
+	bottom: 20px;
 }
