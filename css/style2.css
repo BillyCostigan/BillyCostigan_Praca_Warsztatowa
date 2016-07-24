@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+bin {
+	width: 800px;
+	height: 900px;
+	font-family: 'Raleway', sans-serif;
+	border-bottom: 1px solid #24BA9F;
+}
+
+.bin_header {
+	font-size: 50px;
+	padding: 10px 0 30px 30px;
+}
+
+.bin_live {
+	width: 800px;
+	height: 90px;
+	background-color: #24BA9F;
+	border: 1px solid black;
+	margin-left: 30px;
+	padding-top: 10px;
+}
+
+.live_header {
+	float: left;
+	color: white;
+	padding: 20px 10px 15px 20px;
+}
+
+.live_info {
+	width: 750px;
+	height: 330px;
+	padding: 0 30px 0 50px;
+
+}
+
+.header_size {
+	font-size: 45px;
+	padding: 30px 10px 30px 30px;
+
+}
+
+.header_scale {
+	font-size: 28px;
+	margin-top: 25px;
+}
+
+.header_dimension {
+	font-size: 20px;
+	margin-top: 25px;
+}
+
+#scale_padding {
+	position: absolute;
+	top: 110px;
+	left: 240px;
+}
+
+#scale_interior {
+	position: absolute;
+	top: 565px;
+}
+
+#scale_inside {
+	position: absolute;
+	top: 668px;
+}
+
+.end {
+	border: 1px solid #24BA9F;
+	margin-top: 200px;
+	width: 800px;
+	margin: 200px 0 0 30px;
+}
+
+.live_index {
+	width:0px;
+height:0px;
+border-right:20px solid transparent;
+border-left:20px solid transparent;
+border-top:30px solid white;
+margin-left: 730px;
+margin: 25px 0 0 730px;
+}
