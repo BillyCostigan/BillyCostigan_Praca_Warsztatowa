@@ -254,7 +254,6 @@ container {
 
 chest {
 	width: 100%;
-
 	position: relative;
 	background-color: #F1F1F1;
 }
@@ -452,4 +451,138 @@ chest {
 	margin-left: 112px;
 	position: absolute;
 	bottom: 20px;
+}
+
+footer {
+	position: relative;
+}
+
+.footer_header {
+	font-weight: bold;
+	position: absolute;
+	top: 30px;
+	left: 65px;
+	display: block;
+	font-size: 22px;
+}
+
+.footer_header::after {
+	content:"";
+	background-color: #24BA9F;
+	width: 350px;
+	height: 6px;
+	display: block;
+}
+
+.footer_box {
+	width: 700px;
+	height: 450px;
+	display: inline-block;
+	position: absolute;
+	top: 100px;
+	left: 60px;
+}
+
+.footer_allow {
+	width: 400px;
+	height: 450px;
+	display: inline-block;
+	position: absolute;
+	top: 90px;
+	left: 850px;
+}
+
+.footer_infos {
+	width: 1150px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	left: 60px;
+	top: 600px;
+}
+
+.box_size {
+	border: 1px solid #24BA9F;
+	color: lightgray;
+	display: block;
+	position: absolute;
+	width: 660px;
+	font-size: 22px;
+
+}
+
+#box_name {
+	padding: 20px;
+	top: 20px;
+}
+
+#box_email {
+	padding: 20px;
+	top: 110px;
+}
+
+#box_message {
+	padding: 15px 15px 90px 15px;
+	top: 210px;
+	height: 60px;
+}
+
+#box_sit {
+	margin-left: 60px;
+	position: relative;
+}
+
+#allow_icon {
+	border: 1px solid #24BA9F;
+	border-radius: 2px;
+	height: 50px;
+	width: 50px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.allow_text {
+	color: gray;
+	display: block;
+	font-size: 20px;
+}
+
+.box_allow div {
+	position: absolute;
+	top: 250px;
+	left: 95px;
+}
+
+.box_send {
+	background-color: #24BA9F;
+	color: white;
+	font-size: 40px;
+	padding: 20px 70px;
+	width: 200px;
+	margin-left: -64px;
+	margin-top: 60px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.footer_rights {
+	color: gray;
+	float: left;
+}
+
+.footer_main_logo {
+	color: gray;
+	float: right;
+	font-size: 20px;
+	padding: 10px;
+	position: relative;
+}
+
+.footer_logos {
+	float: right;
+	margin-right: 25px;
+}
+
+.logo_bold {
+	font-weight: bold;
 }
