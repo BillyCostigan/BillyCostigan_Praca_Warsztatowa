@@ -42,6 +42,61 @@ table {
 	border-spacing: 0;
 }
 
+body {
+	height: 2300px;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: auto;
+	font-size: 20px;
+}
+
+.header_horizontal_list ul > li {
+    margin-right: 10px;
+    margin-left: 10px;
+    float: right;
+    padding: 11px;
+}
+
+.header_title {
+
+    float: left;
+    padding: 1px;
+	margin-left: 100px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.piece_of_list:hover .vertical_box {
+    display: block;
+}
+
+.piece_of_list {
+    position: relative;
+}
+.vertical_box ul li {
+    float: none;
+    padding: 1px;
+}
+
+.vertical_box {
+    background-color: black;
+    height: 110px;
+    width: 140px;
+    display: none;
+    position: absolute;
+	margin-top: 40px;
+	left: -10px;
+}
+
+.color {
+	color: #24BA9F;
+}
+
 bin {
 	width: 800px;
 	height: 900px;
@@ -51,28 +106,27 @@ bin {
 
 .bin_header {
 	font-size: 50px;
-	padding: 10px 0 30px 30px;
+	padding: 90px 0 30px 70px;
 }
 
 .bin_live {
 	width: 800px;
 	height: 90px;
 	background-color: #24BA9F;
-	border: 1px solid black;
-	margin-left: 30px;
+	margin-left: 70px;
 	padding-top: 10px;
 }
 
 .live_header {
 	float: left;
 	color: white;
-	padding: 20px 10px 15px 20px;
+	padding: 20px 10px 15px 60px;
 }
 
 .live_info {
 	width: 750px;
 	height: 330px;
-	padding: 0 30px 0 50px;
+	padding: 0 30px 0 72px;
 
 }
 
@@ -94,25 +148,31 @@ bin {
 
 #scale_padding {
 	position: absolute;
-	top: 110px;
-	left: 240px;
+	top: 230px;
+	left: 320px;
 }
 
 #scale_interior {
 	position: absolute;
-	top: 565px;
+	top: 688px;
+	left: 365px;
 }
 
 #scale_inside {
 	position: absolute;
-	top: 668px;
+	top: 790px;
+	left: 445px;
 }
 
 .end {
 	border: 1px solid #24BA9F;
 	margin-top: 200px;
 	width: 800px;
-	margin: 200px 0 0 30px;
+	margin: 200px 0 0 70px;
+}
+
+.footer_infos {
+	margin-top: 500px;
 }
 
 .live_index {
@@ -123,4 +183,27 @@ border-left:20px solid transparent;
 border-top:30px solid white;
 margin-left: 730px;
 margin: 25px 0 0 730px;
+}
+
+.footer_rights {
+	color: gray;
+	float: left;
+	margin-left: 70px;
+}
+
+.footer_main_logo {
+	color: gray;
+	float: right;
+	font-size: 18px;
+	padding: 12px;
+	margin-right: 80px;
+}
+
+.footer_logos {
+	float: right;
+	margin-right: 25px;
+}
+
+.logo_bold {
+	font-weight: bold;
 }
