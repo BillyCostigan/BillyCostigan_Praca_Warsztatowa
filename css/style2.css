@@ -177,12 +177,12 @@ bin {
 
 .live_index {
 	width:0px;
-height:0px;
-border-right:20px solid transparent;
-border-left:20px solid transparent;
-border-top:30px solid white;
-margin-left: 730px;
-margin: 25px 0 0 730px;
+	height:0px;
+	border-right:20px solid transparent;
+	border-left:20px solid transparent;
+	border-top:30px solid white;
+	margin-left: 730px;
+	margin: 25px 0 0 730px;
 }
 
 .footer_rights {

@@ -10,9 +10,9 @@
 
 <body>
     <header>
-        <p class="header_title">
+        <h1 class="header_title">
             SIT <span class="color">ON</span> CHAIR
-        </p>
+        </h1>
         <nav class="header_horizontal_list">
             <ul>
                 <li>
@@ -23,7 +23,7 @@
                 </li>
                 <li class="piece_of_list">
                     O FIRMIE
-                    <div class="vertical_box">
+                    <div class="vertical_list">
                         <ul>
                             <li>
                                 Aktualności
@@ -39,14 +39,13 @@
                 </li>
             </ul>
         </nav>
-
     </header>
-    <section>
-        <article id="slide_box">
-            <img class="section_icon" src="images/black_chair.png" />
-            <h1>
+    <section class="box">
+        <article class="slide_box">
+            <img class="icon_box" src="images/black_chair.png" />
+            <h2>
                 SIT <span class="color">ON</span> OUR <span class="color">CHAIR</span>
-            </h1>
+            </h2>
             <div class="info_box">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra vel nisi id elementum. Sed vehicula augue ipsum, convallis semper enim suscipit vel. Fusce hendrerit nibh sed libero malesuada, ut ultrices quam ultricies.
@@ -55,58 +54,59 @@
             <p class="more_box">
                 ZOBACZ WIĘCEJ
             </p>
-            <div class="left_symbol">
+            <div class="left_slyder_button">
                 &lt;
             </div>
-            <div class="right_symbol">
+            <div class="right_slyder_button">
                 &gt;
             </div>
         </article>
     </section>
-
-    <container>
-        <img class="photo_begin_box" src="images/box1_img.jpg">
-        <div class="opacity_box" id="position_opacity">
-            <span class="opacity_text" id="position_color">
+    <section class="container">
+        <img class="photo_begin_container" src="images/box1_img.jpg">
+        <div class="opacity_container position_opacity">
+            <span class="opacity_text">
                 Chair CLAIR
             </span>
         </div>
         </img>
-        <img class="photo_end_box" src="images/box2_img.jpg">
-        <div class="opacity_box" id="building_opacity">
-            <span class="opacity_text" id="building_color">
+        <img class="photo_end_container" src="images/box2_img.jpg">
+        <div class="opacity_container building_opacity">
+            <span class="opacity_text">
                 Chair MARGARITA
             </span>
         </div>
         </img>
-        <div class="text_box">
-            <span class="container_header">Lorem ipsum</span>
+        <div class="text_container">
+            <span class="header_container">Lorem ipsum</span>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra vel nisi id elementum. Sed vehicula augue ipsum, convallis semper enim suscipit vel. Fusce hendrerit nibh sed libero malesuada, ut ultrices quam ultricies. Lorem ipsum dolor sitamet,
                 consectetur adipiscing elit. Proin tempus ut mi ac eleifend. Vivamus congue dolor non eros malesuada, vitae cursus augue vehicula. Duis ligula diam, egestas quis interdum quis, faucibus at dui.
             </p>
         </div>
-    </container>
-    <chest>
-        <article class="chest_header">
-            CENNIK
+    </section>
+    <section class="chest">
+        <article class="header_chest">
+            <p>
+                CENNIK
+            </p>
         </article>
-        <div class="chest_boxes">
-            <article class="chest_box" id="rest_box">
-                <div class="box_icon" id="box_art">
+        <div class="chest_main_bin">
+            <article class="chest_bin rest_bin">
+                <div class="icon_bin art_bin">
                 </div>
-                <div class="box-info">
-                    <div class="info_plan" id="plan_many">
+                <div class="info_bin">
+                    <div class="info_plan plan_many">
                         BASIC PLAN
                     </div>
-                    <div class="info_price" id="price_light">
+                    <div class="info_price price_light">
                         <p class="price_height">
-                            <span class="price_up">8</span>5<span class="price_upper">99</span></p>
+                            85<span class="price_upper">99</span></p>
                         <p class="price_time">
                             PLN/MSC
                         </p>
                     </div>
-                    <div class="box_margin">
+                    <div class="margin_bin">
                         <div class="info_paint">
                             Zakup towaru + dowóz
                         </div>
@@ -114,26 +114,27 @@
                             Serwis
                         </div>
                     </div>
-                    <div class="box_join">
+                    <div class="join_bin">
                         DOŁĄCZ
                     </div>
-            </article>
-            <article class="chest_box" id="add_box">
-                <div class="box_icon" id="box_symbol">
                 </div>
-                <div class="box-info">
-                    <div class="info_plan" id="plan_more">
+            </article>
+            <article class="chest_bin add_bin">
+                <div class="icon_bin symbol_bin">
+                </div>
+                <div class="info_bin">
+                    <div class="info_plan plan_more">
                         STANDARD PLAN
                     </div>
-                    <div class="info_price" id="price_color">
+                    <div class="info_price price_color">
                         <p class="price_height">
-                            <span class="price_low">9</span>5<span class="price_upper">99</span></p>
+                            95<span class="price_upper">99</span></p>
                         <p class="price_time">
                             PLN/MSC
                         </p>
                     </div>
-                    <div class="box_margin">
-                        <div class="info_show" id="">
+                    <div class="margin_bin">
+                        <div class="info_show">
                             Zakup towaru + dowóz
                         </div>
                         <div class="info_describe">
@@ -143,15 +144,16 @@
                             Gwarancja 5 lat
                         </div>
                     </div>
-                    <div class="box_observe">
+                    <div class="observe_bin">
                         DOŁĄCZ
                     </div>
-            </article>
-            <article class="chest_box" id="option_box">
-                <div class="box_icon" id="box_logo">
                 </div>
-                <div class="box-info">
-                    <div class="info_plan" id="plan_the_most">
+            </article>
+            <article class="chest_bin option_bin">
+                <div class="icon_bin logo_bin">
+                </div>
+                <div class="info_bin">
+                    <div class="info_plan plan_the_most">
                         ADVANCED PLAN
                     </div>
                     <div class="info_price" id="price_light">
@@ -162,7 +164,7 @@
                             PLN/MSC
                         </p>
                     </div>
-                    <div class="box_margin">
+                    <div class="margin_bin">
                         <div class="info_paint">
                             Zakup towaru + dowóz
                         </div>
@@ -176,50 +178,119 @@
                             Porady projektanta
                         </div>
                     </div>
-                    <div class="box_join">
+                    <div class="join_bin">
                         DOŁĄCZ
                     </div>
+                </div>
             </article>
-            </div>
-    </chest>
+    </section>
+    <section class="application ">
+        <div class="main_width">
+            <section class="choice_part inline">
+                <header>
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel choice_name">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel choice_color">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel choice_material">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
+                </div>
+            </section>
+
+            <section class="image_part inline">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="summary_part inline">
+                <header class="align_right">
+                    <h3>PODSUMOWANIE</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="colorful"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
+        </div>
+    </section>
     <footer>
         <article class="footer_header">
             KONTAKT
         </article>
-        <article class="footer_box">
-            <div class="box_size" id="box_name">
+        <article class="footer_data">
+            <div class="data_size data_name">
                 Imię
             </div>
-            <div class="box_size" id="box_email">
+            <div class="data_size data_email">
                 email
             </div>
-            <div class="box_size" id="box_message">
+            <div class="data_size data_message">
                 Wiadomość
             </div>
         </article>
-        <article class="footer_allow">
-            <img id="box_sit" src=" images/red_chair.png " />
-            <div class="box_allow">
-
-                <img id="allow_icon" src="images/form_ok.jpg" />
+        <article class="footer_confirm">
+            <img class="confirm_sit" src=" images/red_chair.png " />
+            <div class="confirm_allow">
+                <img class="allow_icon" src="images/form_ok.jpg" />
                 <div>
-
-
                     <p class="allow_text">
                         Zgadzam się na przetwarzanie
                     </p>
                     <p class="allow_text">
                         danych osobowych
                     </p>
-
                 </div>
-
-                <div class="box_send">
+                <div class="confirm_send">
                     WYŚLIJ
                 </div>
             </div>
         </article>
-        <article class="footer_infos ">
+        <article class="footer_infos">
             <p class="footer_rights">
                 Copyright 2014 | All Rights Reserved - Sit On Chair
             </p>
@@ -234,6 +305,7 @@
             </div>
         </article>
     </footer>
+    <script src="js/events.js" type="text/javascript"></script>
 </body>
 
 </html>
