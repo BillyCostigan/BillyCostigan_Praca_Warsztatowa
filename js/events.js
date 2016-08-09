@@ -61,38 +61,47 @@ document.addEventListener("DOMContentLoaded", function() {
     var sum_transport = 0;
 
     for (var i = 0; i < select_div.length; i++) {
-
-
         select_div[i].addEventListener('click', function() {
-            this.lastElementChild.classList.toggle('visible_panel')
+            this.lastElementChild.classList.toggle('visible_panel');
+
             for (var j = 0; j < choice_name.length; j++) {
                 choice_name[j].addEventListener('click', function() {
                     this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
                     chair_title.innerText = 'Chair ' + this.innerText;
                     chair_title_value.innerText = this.dataset.price;
                     sum_title = chair_title_value.innerText;
+                    sum.innerText = parseInt(sum_title) + parseInt(sum_color) + parseInt(sum_pattern);
+
                     for (var k = 0; k < choice_color.length; k++) {
                         choice_color[k].addEventListener('click', function() {
                             this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
                             chair_color.innerText = this.innerText;
                             chair_color_value.innerText = this.dataset.price;
                             sum_color = chair_color_value.innerText;
+                            sum.innerText = parseInt(sum_title) + parseInt(sum_color) + parseInt(sum_pattern);
+
                             for (var l = 0; l < choice_pattern.length; l++) {
                                 choice_pattern[l].addEventListener('click', function() {
                                     this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
                                     chair_pattern.innerText = this.innerText;
                                     chair_pattern_value.innerText = this.dataset.price;
                                     sum_pattern = chair_pattern_value.innerText;
+                                    sum.innerText = parseInt(sum_title) + parseInt(sum_color) + parseInt(sum_pattern);
                                     checkbox.addEventListener('click', function() {
+
                                         if (checkbox.checked == true) {
                                             chair_transport.innerText = this.nextElementSibling.innerText;
                                             chair_transport_value.innerText = this.dataset.price;
                                             sum_transport = chair_transport_value.innerText;
+                                            sum.innerText = parseInt(sum_title) + parseInt(sum_color) + parseInt(sum_pattern) + parseInt(sum_transport);
+
                                         } else {
                                             chair_transport.innerText = "";
                                             chair_transport_value.innerText = "";
+                                            sum.innerText = parseInt(sum_title) + parseInt(sum_color) + parseInt(sum_pattern);
                                         }
-                                        sum.innerText = parseInt(sum_title) + parseInt(sum_color) + parseInt(sum_pattern) + parseInt(sum_transport);
+
+
                                     })
 
                                 })
