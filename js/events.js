@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var select_div = document.querySelectorAll('.drop_down_list');
     var select_list = document.querySelectorAll('.list_panel');
+    console.log(select_list);
     var select_list_child = document.querySelectorAll('.list_panel li');
+    console.log(select_list_child);
     var select_instead = document.querySelectorAll('.list_label');
 
     var chair_title = document.querySelector('.title');
@@ -53,74 +55,55 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var sum = document.querySelector('.sum');
 
+    var sum_title = 0;
+    var sum_color = 0;
+    var sum_pattern = 0;
+    var sum_transport = 0;
+
     for (var i = 0; i < select_div.length; i++) {
-        var sum_title;
-        var sum_color;
-        var sum_pattern;
 
 
+        select_div[i].addEventListener('click', function() {
+            this.lastElementChild.classList.toggle('visible_panel')
+            for (var j = 0; j < choice_name.length; j++) {
+                choice_name[j].addEventListener('click', function() {
+                    this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
+                    chair_title.innerText = 'Chair ' + this.innerText;
+                    chair_title_value.innerText = this.dataset.price;
+                    sum_title = chair_title_value.innerText;
+                    for (var k = 0; k < choice_color.length; k++) {
+                        choice_color[k].addEventListener('click', function() {
+                            this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
+                            chair_color.innerText = this.innerText;
+                            chair_color_value.innerText = this.dataset.price;
+                            sum_color = chair_color_value.innerText;
+                            for (var l = 0; l < choice_pattern.length; l++) {
+                                choice_pattern[l].addEventListener('click', function() {
+                                    this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
+                                    chair_pattern.innerText = this.innerText;
+                                    chair_pattern_value.innerText = this.dataset.price;
+                                    sum_pattern = chair_pattern_value.innerText;
+                                    checkbox.addEventListener('click', function() {
+                                        if (checkbox.checked == true) {
+                                            chair_transport.innerText = this.nextElementSibling.innerText;
+                                            chair_transport_value.innerText = this.dataset.price;
+                                            sum_transport = chair_transport_value.innerText;
+                                        } else {
+                                            chair_transport.innerText = "";
+                                            chair_transport_value.innerText = "";
+                                        }
+                                        sum.innerText = parseInt(sum_title) + parseInt(sum_color) + parseInt(sum_pattern) + parseInt(sum_transport);
+                                    })
 
-    select_div[i].addEventListener('click', function() {
-        this.lastElementChild.classList.toggle('visible_panel')
-        for (var j = 0; j < choice_name.length; j++) {
-            choice_name[j].addEventListener('click', function() {
+                                })
+                            }
+                        })
+                    }
+                })
+            }
 
-                this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
-                chair_title.innerText = 'Chair ' + this.innerText;
-                chair_title_value.innerText = this.dataset.price;
-                sum_title = chair_title_value.innerText;
-                console.log(sum_title);
+        })
 
-            })
-        }
-    })
-
-
-    select_div[i].addEventListener('click', function() {
-        this.lastElementChild.classList.toggle('visible_panel')
-        for (var k = 0; k < choice_color.length; k++) {
-            choice_color[k].addEventListener('click', function() {
-                var sum_color = 0;
-                this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
-                chair_color.innerText = this.innerText;
-                chair_color_value.innerText = this.dataset.price;
-                var sum_color = chair_color_value.innerText;
-                console.log(sum_color);
-            })
-        }
-    })
-
-    select_div[i].addEventListener('click', function() {
-        this.lastElementChild.classList.toggle('visible_panel')
-        for (var l = 0; l < choice_pattern.length; l++) {
-            choice_pattern[l].addEventListener('click', function() {
-                var sum_pattern = 0;
-                this.parentElement.previousElementSibling.previousElementSibling.innerText = this.innerText;
-                chair_pattern.innerText = this.innerText;
-                chair_pattern_value.innerText = this.dataset.price;
-                var sum_pattern = chair_pattern_value.innerText;
-                console.log(sum_pattern);
-            })
-        }
-    })
-
-
-    checkbox.addEventListener('click', function() {
-        if (checkbox.checked == true) {
-            chair_transport.innerText = this.nextElementSibling.innerText;
-            chair_transport_value.innerText = this.dataset.price;
-            sum.innerText = chair_transport_value.innerText;
-        } else {
-            chair_transport.innerText = "";
-            chair_transport_value.innerText = "";
-            sum.innerText = "";
-        }
-    })
-
-
-    sum.innerText = sum_title + sum_color + sum_pattern;
-
-}
-
+    }
 
 });
