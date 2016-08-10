@@ -30,11 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
         container_opacity2.classList.remove('hidden_opacity');
     })
 
+
+/*
+
+KALKULATOR
+
+*/
     var select_div = document.querySelectorAll('.drop_down_list');
     var select_list = document.querySelectorAll('.list_panel');
-    console.log(select_list);
     var select_list_child = document.querySelectorAll('.list_panel li');
-    console.log(select_list_child);
     var select_instead = document.querySelectorAll('.list_label');
 
     var chair_title = document.querySelector('.title');
@@ -114,5 +118,35 @@ document.addEventListener("DOMContentLoaded", function() {
         })
 
     }
+
+    /*
+
+    SLIDER
+
+    */
+
+
+    var change_left = document.querySelector('.left_slyder_button');
+    var change_right = document.querySelector('.right_slyder_button');
+    var slider_objects = document.querySelectorAll('.slider');
+    slider_objects[0].classList.add('visibility');
+
+
+    var i = 0;
+    change_right.addEventListener('click', function() {
+        slider_objects[(i + 98) % 7].classList.remove('visibility');
+        slider_objects[((i + 1) + 98) % 7].classList.add('visibility');
+        i = i + 1;
+    })
+
+    var i = 0;
+    change_left.addEventListener('click', function() {
+        slider_objects[(i + 98) % 7].classList.remove('visibility');
+        slider_objects[((i - 1) + 98) % 7].classList.add('visibility');
+        i = i - 1;
+    })
+
+    /* 98 jest liczba dowolna podzielna przez 7, zakladam ze komus nie bedzie chcialo sie klikac 98 razy w jeden przycisk*/
+
 
 });
