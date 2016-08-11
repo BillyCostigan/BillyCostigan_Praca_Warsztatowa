@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    /*
+
+    WYSUWANE MENU
+
+    */
+
     var header_li = document.querySelector('.piece_of_list')
     var header_ul = header_li.querySelector('.vertical_list')
 
@@ -10,6 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
     header_li.addEventListener('mouseout', function() {
         header_ul.classList.add('hidden_list');
     })
+
+    /*
+
+    ZNIKAJACE TYTULY ZDJEC
+
+    */
 
     var container_photo1 = document.querySelector('.photo_begin_container')
     var container_photo2 = document.querySelector('.photo_end_container')
@@ -30,12 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
         container_opacity2.classList.remove('hidden_opacity');
     })
 
+    /*
 
-/*
+    KALKULATOR
 
-KALKULATOR
-
-*/
+    */
     var select_div = document.querySelectorAll('.drop_down_list');
     var select_list = document.querySelectorAll('.list_panel');
     var select_list_child = document.querySelectorAll('.list_panel li');
@@ -134,19 +145,19 @@ KALKULATOR
 
     var i = 0;
     change_right.addEventListener('click', function() {
-        slider_objects[(i + 98) % 7].classList.remove('visibility');
-        slider_objects[((i + 1) + 98) % 7].classList.add('visibility');
+        slider_objects[(i + 7777) % 7].classList.remove('visibility');
+        slider_objects[((i + 1) + 7777) % 7].classList.add('visibility');
         i = i + 1;
     })
 
     var i = 0;
     change_left.addEventListener('click', function() {
-        slider_objects[(i + 98) % 7].classList.remove('visibility');
-        slider_objects[((i - 1) + 98) % 7].classList.add('visibility');
+        slider_objects[(i + 7777) % 7].classList.remove('visibility');
+        slider_objects[((i - 1) + 7777) % 7].classList.add('visibility');
         i = i - 1;
     })
 
-    /* 98 jest liczba dowolna podzielna przez 7, zakladam ze komus nie bedzie chcialo sie klikac 98 razy w jeden przycisk*/
+    /* 7777 jest liczba dowolna podzielna przez 7, zakladam ze komus nie bedzie chcialo sie klikac 7777 razy w jeden przycisk*/
 
 
 });
