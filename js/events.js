@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     header_li.addEventListener('mouseover', function() {
         header_ul.classList.remove('hidden_list');
     })
-    header_li.addEventListener('mouseout', function() {
+    header_ul.addEventListener('mouseout', function() {
         header_ul.classList.add('hidden_list');
     })
 
@@ -145,15 +145,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var i = 0;
     change_right.addEventListener('click', function() {
-        slider_objects[(i + 7777) % 7].classList.remove('visibility');
-        slider_objects[((i + 1) + 7777) % 7].classList.add('visibility');
+        slider_objects[(i + 99) % 3].classList.remove('visibility');
+        slider_objects[((i + 1) + 99) % 3].classList.add('visibility');
         i = i + 1;
     })
 
     var i = 0;
     change_left.addEventListener('click', function() {
-        slider_objects[(i + 7777) % 7].classList.remove('visibility');
-        slider_objects[((i - 1) + 7777) % 7].classList.add('visibility');
+        slider_objects[(i + 99) % 3].classList.remove('visibility');
+        slider_objects[((i - 1) + 99) % 3].classList.add('visibility');
         i = i - 1;
     })
 

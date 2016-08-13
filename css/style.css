@@ -38,7 +38,7 @@ BODY
 
 body {
     font-family: 'Raleway', Tahoma, sans-serif;
-    width: 100%;
+    width: 1200px;
 }
 .color {
     color: #24BA9F;
@@ -54,7 +54,7 @@ header {
     background-color: black;
     color: white;
     height: 40px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .header_title {
     float: left;
@@ -64,7 +64,7 @@ header {
 }
 .header_horizontal_list ul > li {
     float: right;
-    margin: 11px 20px 0 20px;
+    margin: 11px 20px 0 30px;
 }
 .piece_of_list {
     position: relative;
@@ -73,7 +73,7 @@ header {
     position: absolute;
     background-color: black;
     height: 110px;
-    width: 160px;
+    width: 150px;
     top: 50px;
     left: -10px;
     z-index: 1;
@@ -140,12 +140,12 @@ SECTION1
     width: 450px;
     height: 250px;
     top: 110px;
-    right: 300px;
+    right: 180px;
     z-index: 1;
 }
 h2 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     z-index: 1;
 }
 .info_box {
@@ -200,26 +200,31 @@ SECTION2
 
 .container {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     height: 360px;
+}
+.container_bag {
+    width: 331px;
+    height: 227px;
+    margin: 15px 0 70px 50px;
 }
 .photo_begin_container {
     position: relative;
-    width: 395px;
-    margin: 15px 15px 70px 70px;
     border: 1px solid lightgray;
     z-index: 0;
 }
 .opacity_container {
     position: absolute;
     background-color: rgba(255, 255, 255, .4);
-    width: 397px;
+    width: 331px;
     height: 50px;
     top: 760px;
     z-index: 1;
 }
 .position_opacity {
-    left: 70px;
+    left: 66px;
 }
 .hidden_opacity {
     display: none;
@@ -231,13 +236,10 @@ SECTION2
 }
 .photo_end_container {
     position: relative;
-    width: 395px;
-    margin: 15px 15px 70px 15px;
     border: 1px solid lightgray;
-    z-index: 0;
 }
 .building_opacity {
-    left: 497px;
+    left: 447px;
 }
 .opacity_text::after {
     content: "";
@@ -248,9 +250,9 @@ SECTION2
 }
 .text_container {
     position: relative;
-    width: 395px;
+    width: 350px;
     height: 300px;
-    margin: 10px 30px 30px 15px;
+    margin: 10px 30px 30px 25px;
     border: 1px solid lightgray;
 }
 .text_container p {
@@ -282,12 +284,11 @@ SECTION3
 */
 
 .chest {
-    position: relative;
     background-color: #F1F1F1;
-    width: 100%;
+    height: 700px;
 }
 .header_chest {
-    position: absolute;
+    position: relative;
     display: block;
     font-weight: bold;
     top: 30px;
@@ -304,8 +305,10 @@ SECTION3
 .chest_main_bin {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     background-color: #F1F1F1;
-    height: 700px;
+    height: 600px;
+    margin-top: 60px;
 }
 
 /*
@@ -316,14 +319,12 @@ PIERWSZY DIV Z CENAMI
     position: relative;
     display: inline-block;
     text-align: center;
-    width: 400px;
+    width: 350px;
     height: 500px;
-    margin: 0 0 100px 10px;
+    margin: 0 5px 60px 5px;
 }
 .rest_bin {
     background-color: white;
-    top: 60px;
-    left: 50px;
     border: 3px solid lightgray;
 }
 .icon_bin {
@@ -331,7 +332,7 @@ PIERWSZY DIV Z CENAMI
     width: 30px;
     height: 30px;
     bottom: 485px;
-    left: 175px;
+    left: 150px;
     border-radius: 100%;
 }
 .art_bin {
@@ -357,7 +358,7 @@ PIERWSZY DIV Z CENAMI
     width: 170px;
     height: 170px;
     top: 90px;
-    left: 115px;
+    left: 90px;
     border: 1px solid lightgray;
     border-radius: 100%;
 }
@@ -395,7 +396,7 @@ PIERWSZY DIV Z CENAMI
     color: white;
     width: 160px;
     top: 450px;
-    left: 112px;
+    left: 90px;
     padding: 5px;
     border-radius: 4px;
     font-size: 20px;
@@ -407,8 +408,6 @@ DRUGI DIV Z CENAMI
 
 .add_bin {
     background-color: #24BA9F;
-    top: 60px;
-    left: 60px;
     border: 3px solid #24BA9F;
 }
 .symbol_bin {
@@ -439,7 +438,7 @@ DRUGI DIV Z CENAMI
     width: 160px;
     height: 20px;
     top: 450px;
-    left: 112px;
+    left: 90px;
     padding: 5px;
     border-radius: 4px;
     font-size: 20px;
@@ -451,8 +450,6 @@ TRZECI DIV Z CENAMI
 
 .option_bin {
     background-color: white;
-    top: 60px;
-    left: 70px;
     border: 3px solid lightgray;
 }
 .logo_bin {
@@ -691,14 +688,16 @@ FOOTER
 */
 
 footer {
-    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+
 }
 .footer_header {
-    position: absolute;
     display: block;
     font-weight: bold;
-    top: 30px;
-    left: 65px;
+    margin-top: 30px;
+    margin-left: 65px;
     font-size: 22px;
 }
 .footer_header::after {
@@ -708,15 +707,23 @@ footer {
     width: 350px;
     height: 6px;
 }
+.footer_news {
+    height: 500px;
+    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+}
 .footer_data {
-    position: absolute;
     display: inline-block;
     display: flex;
     flex-direction: column;
     width: 700px;
     height: 450px;
-    top: 100px;
-    left: 60px;
+    margin-top: 50px;
+    margin-left: 60px;
 }
 .data_size {
     display: block;
@@ -757,12 +764,11 @@ footer {
     font-size: 30px;
 }
 .footer_confirm {
-    position: absolute;
     display: inline-block;
     width: 400px;
     height: 450px;
-    top: 90px;
-    left: 850px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 .confirm_sit {
     margin-left: 60px;
@@ -771,7 +777,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 200px;
+    height: 250px;
 }
 .confirm_allow div {
     display: flex;
@@ -806,8 +812,8 @@ footer {
     background-color: #24BA9F;
     color: white;
     width: 200px;
-    padding: 1px 60px;
-    margin: 0 0 -40px 30px;
+    padding: 0 60px;
+    margin: 0 0 50px 30px;
     border-radius: 10px;
     font-size: 40px;
 }
@@ -817,12 +823,11 @@ footer {
     margin-top: 8px;
 }
 .footer_infos {
-    position: absolute;
     display: block;
     width: 1150px;
     height: 50px;
-    top: 600px;
-    left: 60px;
+    margin-top: 600px;
+    margin-left: 60px;
 }
 .footer_rights {
     float: left;

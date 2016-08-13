@@ -43,44 +43,32 @@
         </nav>
     </header>
     <section class="box">
-        <ul class="bxslider">
-            <li class="slider">
-                <article class="slide_box">
+        <article class="slide_box">
+            <ul class="bxslider">
+                <li class="slider">
                     <img class="icon_box" src="images/black_chair.png" />
-                    <div class="text_box">
-                        <h2>
+                </li>
+                <li class="slider">
+                    <img class="icon_box" src="images/orange.png" />
+                </li>
+                <li class="slider">
+                    <img class="icon_box" src="images/red.png" />
+                </li>
+            </ul>
+            <div class="text_box">
+                <h2>
                             SIT <span class="color">ON</span> OUR <span class="color">CHAIR</span>
                         </h2>
-                        <div class="info_box">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra vel nisi id elementum. Sed vehicula augue ipsum, convallis semper enim suscipit vel. Fusce hendrerit nibh sed libero malesuada, ut ultrices quam ultricies.
-                            </p>
-                        </div>
-                        <p class="more_box">
-                            <a href="" class="a_href">ZOBACZ WIĘCEJ</a>
-                        </p>
-                    </div>
-                </article>
-            </li>
-            <li>
-                <img class="slider" src="images/pobrane.jpg" />
-            </li>
-            <li>
-                <img class="slider" src="images/pobrane 2.jpg" />
-            </li>
-            <li>
-                <img class="slider" src="images/pobrane 3.jpg" />
-            </li>
-            <li>
-                <img class="slider" src="images/pobrane 4.jpg" />
-            </li>
-            <li>
-                <img class="slider" src="images/pobrane 5.jpg" />
-            </li>
-            <li>
-                <img class="slider" src="images/pobrane 6.jpg" />
-            </li>
-        </ul>
+                <div class="info_box">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra vel nisi id elementum. Sed vehicula augue ipsum, convallis semper enim suscipit vel. Fusce hendrerit nibh sed libero malesuada, ut ultrices quam ultricies.
+                    </p>
+                </div>
+                <p class="more_box">
+                    <a href="" class="a_href">ZOBACZ WIĘCEJ</a>
+                </p>
+            </div>
+        </article>
         <div class="left_slyder_button">
             &lt;
         </div>
@@ -89,20 +77,22 @@
         </div>
     </section>
     <section class="container">
-        <img class="photo_begin_container" src="images/box1_img.jpg">
-        <div class="opacity_container position_opacity">
-            <span class="opacity_text">
+        <div class="container_bag">
+            <img class="photo_begin_container" src="images/box1_img.jpg" />
+            <div class="opacity_container position_opacity">
+                <span class="opacity_text">
                 Chair CLAIR
-            </span>
+                </span>
+            </div>
         </div>
-        </img>
-        <img class="photo_end_container" src="images/box2_img.jpg">
-        <div class="opacity_container building_opacity">
-            <span class="opacity_text">
+        <div class="container_bag">
+            <img class="photo_end_container" src="images/box2_img.jpg" />
+            <div class="opacity_container building_opacity">
+                <span class="opacity_text">
                 Chair MARGARITA
-            </span>
+                </span>
+            </div>
         </div>
-        </img>
         <div class="text_container">
             <span class="header_container">Lorem ipsum</span>
             <p>
@@ -182,7 +172,7 @@
                     <div class="info_plan plan_the_most">
                         ADVANCED PLAN
                     </div>
-                    <div class="info_price" id="price_light">
+                    <div class="info_price price_light">
                         <p class="price_height">
                             211<span class="price_upper">00</span>
                         </p>
@@ -217,7 +207,6 @@
                     <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
                     <span class="green_bell"></span>
                 </header>
-
                 <div class="form">
                     <div class="drop_down_list">
                         <span class="list_label">Wybierz rodzaj</span>
@@ -253,17 +242,14 @@
                     <!--<span class="list_label inline_text">Transport</span>-->
                 </div>
             </section>
-
             <section class="image_part inline">
                 <img src="images/red_chair.png">
             </section>
-
             <section class="summary_part inline">
                 <header class="align_right">
                     <h3>PODSUMOWANIE</h3>
                     <span class="green_bell"></span>
                 </header>
-
                 <div class="summary_panel">
                     <div class="panel_left">
                         <h4 class="title">Twój fotel</h4>
@@ -288,35 +274,37 @@
         <article class="footer_header">
             KONTAKT
         </article>
-        <article class="footer_data">
-            <div class="data_size data_name">
-                <input id="position_name" type="text" name="name" value="Imię">
-            </div>
-            <div class="data_size data_email">
-                <input id="position_email" type="text" name="email" value="email">
-            </div>
-            <div class="data_size data_message">
-                <input id="position_message" type="text" name="message" value="Wiadomość">
-            </div>
-        </article>
-        <article class="footer_confirm">
-            <img class="confirm_sit" src=" images/red_chair.png " />
-            <div class="confirm_allow">
-                <div>
-                    <img class="allow_icon" src="images/form_ok.jpg" />
+        <article class="footer_news">
+            <article class="footer_data">
+                <div class="data_size data_name">
+                    <input id="position_name" type="text" name="name" value="Imię">
+                </div>
+                <div class="data_size data_email">
+                    <input id="position_email" type="text" name="email" value="email">
+                </div>
+                <div class="data_size data_message">
+                    <input id="position_message" type="text" name="message" value="Wiadomość">
+                </div>
+            </article>
+            <article class="footer_confirm">
+                <img class="confirm_sit" src=" images/red_chair.png " />
+                <div class="confirm_allow">
                     <div>
-                        <p class="allow_text">
-                            Zgadzam się na przetwarzanie
-                        </p>
-                        <p class="allow_text">
-                            danych osobowych
-                        </p>
+                        <img class="allow_icon" src="images/form_ok.jpg" />
+                        <div>
+                            <p class="allow_text">
+                                Zgadzam się na przetwarzanie
+                            </p>
+                            <p class="allow_text">
+                                danych osobowych
+                            </p>
+                        </div>
+                    </div>
+                    <div class="confirm_send">
+                        <a href="" class="a_href">WYŚLIJ</a>
                     </div>
                 </div>
-                <div class="confirm_send">
-                    <a href="" class="a_href">WYŚLIJ</a>
-                </div>
-            </div>
+            </article>
         </article>
         <article class="footer_infos">
             <p class="footer_rights">
